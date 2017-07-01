@@ -82,6 +82,10 @@ app.get('/:role', function (req, res) {
   }
 });
 
+app.get('/test',function(req,res){
+res.sendText('Hello_world');
+});
+
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
